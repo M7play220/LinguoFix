@@ -1,0 +1,660 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header nav ul li:last-child a {
+    background-color: #222;
+    color: white;
+    width: 150px;
+    text-align: center;
+    display: block;
+    border-radius: 100px;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul li:last-child a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка сайту */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+nav .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #111;
+}
+
+header nav a.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav a.logo-link:hover .logo {
+    color: #111;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav .logo img {
+    height: 75px;
+}
+
+.correction-page header nav ul li:last-child a {
+    background-color: #f8f8f8;
+    color: #555;
+}
+
+/* Основний контент */
+main {
+    background-color: #f8f8f8;
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* Секція "Hero" */
+#hero {
+    width: 75%;
+    padding: 50px 20px;
+    text-align: left;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+#hero .hero-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Секція "Виправлення помилок" */
+#correction-section {
+    width: 75%;
+    padding: 25px 20px;
+    text-align: left;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+#correction-section .correction-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+#correction-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+#correction-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#correction-section .errors-image img {
+    min-width: 100%;
+    height: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Секція "Чому обирають нас?" */
+#features {
+    width: 75%;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 95px;
+}
+
+.features-container {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.features-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 950px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 30%;
+}
+
+.feature h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.feature p {
+    color: #555;
+}
+
+#initial-correction-form,
+#editing-correction-form {
+    width: 75%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: left;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.correction-container {
+    max-width: 950px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 550px;
+}
+
+#initial-correction-form h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.text-form label {
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.text-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 950px;
+}
+
+#text-input::placeholder {
+    color: #999;
+}
+
+.text-form textarea {
+    max-width: 950px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#text-form button {
+    padding: 12px 25px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#text-form button:hover {
+    background-color: #555;
+}
+
+#editing-correction-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: left;
+}
+
+#original-text {
+    background-color: #f8f8f8;
+}
+
+#corrected-text {
+    background-color: #e6f7ff;
+}
+
+#features .feature h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+#recheck-button {
+    padding: 12px 25px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#recheck-button:hover {
+    background-color: #555;
+}
+
+#features .feature p {
+    color: #555;
+}
+
+.editing-text-areas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.original-text-area label,
+.corrected-text-area label {
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.original-text-area textarea,
+.corrected-text-area textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.corrected-text-area textarea {
+    background-color: #f8f8f8;
+}
+
+#translation {
+    width: 75%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: left;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.translation-container {
+    max-width: 950px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 550px;
+}
+
+/* Стилі для заголовка на сторінці перекладу */
+#translation h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.language-selectors {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* style.css */
+
+/* ... (попередні стилі) ... */
+
+/* Стилі для контейнера вибору мови (div#language-selector-container) */
+.language-selection {
+    display: flex;
+    flex-direction: column;     /* Розташовуємо label та select у стовпчик */
+    align-items: flex-start;    /* Вирівнюємо label та select по лівому краю всередині цього контейнера */
+    width: 100%;                /* Дозволяємо контейнеру займати доступну ширину (важливо для правильного flex-start) */
+                                /* margin-top та margin-bottom вже застосовані інлайн в HTML */
+}
+
+/* Стилі для напису "Мова тексту" (label всередині .language-selection) */
+.language-selection label {
+    margin-bottom: 8px;         /* Відступ знизу, між написом та списком */
+    font-weight: bold;          /* Жирний шрифт, як у .text-form label */
+    font-size: 1.1em;           /* Розмір шрифту, як у .text-form label */
+    color: #555;                /* Колір тексту, як у .text-form label */
+    /* display: block; */       /* Не обов'язково при flex-direction: column, але можна додати для явності */
+}
+
+/* Оновлені/доповнені стилі для самого випадаючого списку #correction-language */
+/* Також застосовуються до .language-selector select, .output-language-selector select для уніфікації */
+.language-selector select,
+.output-language-selector select,
+#correction-language {
+    font-size: 1.2em; /* */
+    padding: 12px 25px; /* Ефективний padding з вашого файлу */
+    border: 1px solid #222; /* Рамка суцільна, кольору #222 */
+    border-radius: 70px; /* */
+    background-color: #222; /* */
+    color: white; /* */
+    appearance: none; /* */
+    -webkit-appearance: none; /* */
+    -moz-appearance: none; /* */
+    background-repeat: no-repeat; /* */
+    background-position: right 15px center; /* Позиція для кастомної стрілки, якщо є */
+    
+    text-align: center;         /* Текст ВСЕРЕДИНІ <select> залишається центрованим */
+    min-width: 220px;           /* Мінімальна ширина елемента <select> (можна налаштувати) */
+    /* max-width: 100%; */      /* Щоб не виходив за межі батьківського контейнера, якщо той вужчий */
+    box-sizing: border-box;     /* Враховуємо padding та border у загальній ширині/висоті */
+}
+
+/* Стилі при наведенні (залишаються без змін) */
+.language-selector select:hover,
+.output-language-selector select:hover,
+#correction-language:hover {
+    background-color: #555; /* */
+    border-color: #555; /* */
+}
+
+/* ... (решта ваших стилів) ... */
+}
+
+/* Цей блок тепер, по суті, дублюється і може бути видалений, оскільки його функціонал
+   перенесено до попереднього, універсального селектора.
+   Я залишу його закоментованим, якщо ви хочете зберегти.
+*/
+/*
+.language-selector select {
+    padding: 12px 25px;
+    border: 1.1px solid #ccc;
+    border-radius: 100px;
+    font-size: 1em;
+    border-color: #222;
+}
+*/
+
+.text-areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.text-input-area,
+.text-output-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input-area textarea,
+.text-output-area textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.text-output-area textarea {
+    background-color: #f8f8f8;
+}
+
+#translate-button {
+    padding: 12px 25px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+#translate-button:hover {
+    background-color: #555;
+}
+
+#about-us {
+    width: 75%;
+    padding: 50px 20px;
+    text-align: left;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.about-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.section-header {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section-header h1,
+.section-header h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: white;
+}
+
+.team-members {
+    margin-bottom: 30px;
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.team-member .position {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.team-member .member-info h4 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.team-member .member-info ul li {
+    font-size: 1.7em;
+}
+
+/* Підвал сайту */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для контейнера соцмереж у футері */
+footer .social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Стилі для посилань у футері */
+footer .social a {
+    color: #777;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Стилі для іконок всередині посилань */
+footer .social a i {
+    margin-right: 8px;
+    font-size: 1.5em;
+}
+
+/* Прибираємо відступ справа для останнього елемента, якщо є тільки іконки */
+footer .social a i:only-child {
+    margin-right: 0;
+}
+
+/* Стилі при наведенні на посилання */
+footer .social a:hover {
+    color: #f7f7f7;
+}
+
+/* Якщо ви вирішили прибрати текст і залишити тільки іконки */
+footer .social a span {
+    /* display: none; */
+}

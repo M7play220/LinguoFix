@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINGUOFIX - Корекція</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKz5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link" aria-label="На головну LINGUOFIX">
+                <div class="logo">
+                    <img src="img/logo.png" alt="LINGUOFIX Logo"> LINGUOFIX
+                </div>
+            </a>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="translate.html">Переклад</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="correction.html">Корекція</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="initial-correction-form">
+            <div class="correction-container">
+                <h1>Виправлення помилок</h1>
+                <form id="text-form" class="text-form">
+                    <label for="text-input">Забудьте про помилки! Ваш текст буде бездоганним!</label>
+                    <textarea id="text-input" name="text" rows="10" cols="50" placeholder="Введіть текст..."></textarea><br>
+
+                    <div class="language-selection" id="language-selector-container" style="margin-top: 15px; margin-bottom: 15px;">
+                        <label for="correction-language">Мова тексту:</label>
+                        <select id="correction-language" name="language">
+                            <option value="uk" selected>Українська</option>
+                            <option value="en">Англійська</option>
+                            <option value="de">Німецька</option>
+                            <option value="fr">Французька</option>
+                            <option value="es">Іспанська</option>
+                            <option value="it">Італійська</option>
+                            <option value="pl">Польська</option>
+                            <option value="pt">Португальська</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Перевірити на помилки</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="editing-correction-form" style="display: none;">
+            <div class="correction-container">
+                <h2>Редагування тексту</h2>
+                <div class="editing-text-areas">
+                    <div class="original-text-area">
+                        <label for="original-editable-text">Оригінальний текст</label>
+                        <textarea id="original-editable-text" name="original-editable-text" rows="10" cols="50"></textarea>
+                    </div>
+                    <div class="corrected-text-area">
+                        <label for="corrected-editable-text">Виправлений текст</label>
+                        <textarea id="corrected-editable-text" name="corrected-editable-text" rows="10" cols="50" readonly></textarea>
+                    </div>
+                </div>
+                <button id="recheck-button">Перевірити ще раз</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/linguofix/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <span>linguofix.inst</span>
+            </a>
+            <a href="https://www.facebook.com/linguofix/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <span>linguofix.fe</span>
+            </a>
+            <a href="mailto:linguofix@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>linguofix@gmail.com</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/correction.js"></script>
+</body>
+</html>

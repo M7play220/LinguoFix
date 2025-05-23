@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINGUOFIX</title> <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link" aria-label="На головну LINGUOFIX">
+            <div class="logo">
+                <img src="img/logo.png" alt="LINGUOFIX Logo"> LINGUOFIX
+            </div>
+        </a>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="translate.html">Переклад</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="correction.html">Почати</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="translation">
+            <div class="translation-container">
+                <h1>Перекладайте з легкістю, без жодних зусиль.</h1>
+
+                <div class="language-selectors">
+                    <div class="language-selector">
+
+                        <select id="source-language" name="source-language">
+                            <option value="uk">Українська</option>
+                            <option value="en">Англійська</option>
+                            <option value="de">Німецька</option>
+                            </select>
+                    </div>
+                    <div class="language-selector">
+
+                        <select id="target-language" name="target-language">
+                            <option value="uk">Українська</option>
+                            <option value="en">Англійська</option>
+                            <option value="de">Німецька</option>
+                            </select>
+                    </div>
+                </div>
+
+                <div class="text-areas">
+                    <div class="text-input-area">
+
+                        <textarea id="source-text" name="source-text" rows="10" placeholder="Введіть текст..."></textarea>
+                    </div>
+                    <div class="text-output-area">
+
+                        <textarea id="target-text" name="target-text" rows="10" readonly placeholder="Тут могла бути ваша реклама"></textarea>
+                    </div>
+                </div>
+
+                <button id="translate-button">Перекласти</button>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="social">
+        <a href="https://www.instagram.com/linguofix/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>linguofix.inst</span> </a>
+        <a href="https://www.facebook.com/linguofix/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <span>linguofix.fe</span> </a>
+        <a href="mailto:linguofix@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+            <span>linguofix@gmail.com</span> </a>
+    </div>
+</footer>
+
+    <script src="js/translation.js"></script>
+</body>
+
+</html>
